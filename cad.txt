@@ -1,0 +1,18 @@
+Render_template significa ao invés de carregar um texto quero que voce carregue um template. 
+
+Sempre que for usar uma variável dentro do seu código html coloque dentro de duas chaves {{ nome }} 
+
+Vamos colocar o site no servidor do Heroku pois ele e gratis, primeira coisa e garantir que app esteja dentro de if exemplo: 
+
+If __name__ == “__main__”:
+     App.run(debug=True)
+
+Tem que instalar a biblioteca do cs50 via terminal pelo: $ pip3 install cs50
+
+Para ver como seu banco de dado fica quando esta configurando ele use a ferramenta: https://www.khanacademy.org/computer-programming/sql-create-table-with-multiple-data-types/5945065256124416
+
+
+
+— Bootstrap
+
+Usando bootstrap em nosso projeto 
