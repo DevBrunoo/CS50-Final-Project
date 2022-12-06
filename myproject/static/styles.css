@@ -7,7 +7,13 @@ body {
     margin: 0;
     text-align: left;
 }
-
+.h1_schedule{
+    font-size: 62px;
+}
+.h1_schedule:hover{
+    color: yellow;
+    font-size: 72px;
+}
 .container {
     margin-left: auto;
     margin-right: auto;

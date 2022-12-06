@@ -23,7 +23,7 @@ def after_request(response):
     return response
 
 
-@app.route("/x", methods=["GET", "POST"])
+@app.route("/schedule", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
 
@@ -43,7 +43,7 @@ def index():
 
         # TODO: Display the entries in the database on index.html
 
-        return render_template("index.html", schedule=schedule)
+        return render_template("schedule.html", schedule=schedule)
 
 
 
@@ -52,13 +52,13 @@ def index():
 def home():
     return render_template("homepage.html")
 
-@app.route('/contatos')
-def hello():
-    return render_template("contatos.html")
+@app.route('/contact')
+def Contact():
+    return render_template("contact.html")
 
-@app.route('/link')
+@app.route('/motivation')
 def link():
-    return render_template("link.html")
+    return render_template("motivation.html")
 
 @app.route('/usuarios/<nome_usuario>')
 def usuarios(nome_usuario):
