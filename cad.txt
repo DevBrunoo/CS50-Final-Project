@@ -1,3 +1,21 @@
+Para fazer o projeto rodar basta executar os seguintes comandos
+
+1) cd myproject 
+2) python3 -m venv venv 
+3) . venv/bin/activate 
+4) pip install Flask 
+5) Flask run
+
+Este aplicativo e criado aparti de Python, JavaScript, CSS, HTML e SQL.
+
+Utilizamos Python para importa o flamework Flask assim junto com suas bibliotecas 
+que sao uteis tanto para o desenvovimento do aplicativo como tambem para interacao 
+com o banco de dados SQL que serve para armazenar e gerenciar as informacoes de nosso
+aplicativo. 
+
+Criei duas tabelas em um banco de dados uma com o nome schedule para armazenar os dados da agenda
+e uma com o nome de contact que ira armazena os textos digitados na pagina de contatos. 
+
 Render_template significa ao invés de carregar um texto quero que voce carregue um template. 
 
 Sempre que for usar uma variável dentro do seu código html coloque dentro de duas chaves {{ nome }} 
