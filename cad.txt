@@ -34,3 +34,21 @@ Para ver como seu banco de dado fica quando esta configurando ele use a ferramen
 — Bootstrap
 
 Usando bootstrap em nosso projeto 
+
+-----Para rodar 
+
+Para rodar o aplicativo execute os seguintes comandos de linha
+
+Caso não tenha Flask instalado ou esteja usando esse app pela primeira vez
+
+1) cd myproject
+2) python3 -m venv venv "Ira installar algumas dependencias do peojeto"
+3) . venv/bin/activate "Para ativar o ambiente correspodente"
+4) pip install Flask "Ira installar biblioteca do flask"
+5) flask run "Ira fazer o seu app web rodar, verifique de executar esse comando somente se estiver dentro da pagina myproject"
+
+Caso ja tenha Flask instalado ou ja tenha acessado esse peojeto
+
+1) cd my project
+2) . venv/bin/activate
+3) flask run
