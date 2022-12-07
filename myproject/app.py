@@ -1,4 +1,5 @@
 import os
+import datetime #Biblioteca de tempo
 
 from cs50 import SQL
 from flask import Flask, render_template, flash, jsonify, redirect, render_template, request, session
@@ -6,55 +7,42 @@ from flask import Flask, render_template, flash, jsonify, redirect, render_templ
 
 app = Flask(__name__)
 
-# Ensure templates are auto-reload
-# Ensure templates are auto-reloaded
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
-# Configure CS50 Library to use SQLite database
 db = SQL("sqlite:///schedule.db")
-
-
-@app.after_request
-def after_request(response):
-    """Ensure responses aren't cached"""
-    response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
-    response.headers["Expires"] = 0
-    response.headers["Pragma"] = "no-cache"
-    return response
 
 
 @app.route("/schedule", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
 
-        # Acess form data
         name = request.form.get("name")
         data = request.form.get("data")
-
-        # TODO: Add the user's entry into the database
+        
         db.execute("INSERT INTO schedule (name, data) VALUES(?, ?)", name, data)
-
-        # Go to back to homepage
         return redirect("/x")
-
     else:
-
         schedule = db.execute("SELECT * FROM schedule")
-
-        # TODO: Display the entries in the database on index.html
-
         return render_template("schedule.html", schedule=schedule)
 
+@app.route("/contact", methods=["GET", "POST"])
+def contact():
+    if request.method == "POST":
 
+        text = request.form.get("text")
+        surname = request.form.get("surname")
+        email = request.form.get("email")
+        message = request.form.get("message")
 
+        db.execute("INSERT INTO contact (text, surname, email, message) VALUES(?, ?, ?, ?)", text, surname, email, message)
+        return render_template("contact.html", schedule=contact)
+    else:
+        schedule = db.execute("SELECT * FROM contact")
+        return render_template("contact.html", schedule=contact)
 
 @app.route('/')
 def home():
     return render_template("homepage.html")
-
-@app.route('/contact')
-def Contact():
-    return render_template("contact.html")
 
 @app.route('/motivation')
 def link():
@@ -63,6 +51,7 @@ def link():
 @app.route('/usuarios/<nome_usuario>')
 def usuarios(nome_usuario):
     return render_template('usuarios.html', nome_usuario=nome_usuario)
+
 
 
 # coloca o site no ar
