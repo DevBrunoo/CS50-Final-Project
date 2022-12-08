@@ -16,11 +16,11 @@ db = SQL("sqlite:///schedule.db")
 def index():
     if request.method == "POST":
 
-        name = request.form.get("name")
+        text = request.form.get("text")
         data = request.form.get("data")
         
-        db.execute("INSERT INTO schedule (name, data) VALUES(?, ?)", name, data)
-        return redirect("/x")
+        db.execute("INSERT INTO schedule (text, data) VALUES(?, ?)", text, data)
+        return redirect("/schedule")
     else:
         schedule = db.execute("SELECT * FROM schedule")
         return render_template("schedule.html", schedule=schedule)
@@ -29,12 +29,12 @@ def index():
 def contact():
     if request.method == "POST":
 
-        text = request.form.get("text")
+        name = request.form.get("name")
         surname = request.form.get("surname")
         email = request.form.get("email")
         message = request.form.get("message")
 
-        db.execute("INSERT INTO contact (text, surname, email, message) VALUES(?, ?, ?, ?)", text, surname, email, message)
+        db.execute("INSERT INTO contact (name, surname, email, message) VALUES(?, ?, ?, ?)", name, surname, email, message)
         return render_template("contact.html", schedule=contact)
     else:
         schedule = db.execute("SELECT * FROM contact")

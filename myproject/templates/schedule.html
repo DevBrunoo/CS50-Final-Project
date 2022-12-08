@@ -10,9 +10,6 @@
     <body>
         {% include 'header.html' %}
         {% block content %}
-        <br>
-        <br>
-        <br>
       
         <div class="header">
             <h1 class="h1_schedule">Schedule</h1>
@@ -22,11 +19,12 @@
 
                 <h2>Add schedule</h2>
                 <form action="" method="post">
-                    <input name="name" placeholder="Name" type="text">
+                    <input name="text" placeholder="Text" type="text">
                     <input name="data" placeholder="Data" type="datetime" min="00:00" max="24:00">
                     <input type="submit" value="Add schedule"> 
                 </form>
             </div>
+            <br><br>
 
             <div class="section">
 
@@ -41,7 +39,7 @@
                     <tbody>
                         {% for schedule in schedule %}
                             <tr>
-                                <td>{{ schedule.name }}</td>
+                                <td>{{ schedule.text }}</td>
                                 <td>{{ schedule.data }}</td>
                             </tr>
                         {% endfor %}

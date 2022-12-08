@@ -3,6 +3,54 @@
   height: 510px;
 }
 
+/* 
+Editando texto dentro do carrousel
+-------------------------------------
+ */
+.carousel-content {
+  bottom:  90%;
+  z-index: 90;
+  color: rgb(206, 40, 40);
+  text-shadow: 0 1px 2px srgba(189, 60, 60, 0.6);
+  margin-top: 42px;
+}
+.h3-hp-1{
+  position: relative;
+  top: -340px;
+  margin-right: 140px;
+  text-align: right;
+  font-size: 52px;
+  color:black;
+  border-color: black;
+  text-shadow: 4px 5px 4px #ffffff;
+}
+.h3-hp-1:hover{
+  font-size: 77px;
+  color: red;
+  top: -200px;
+
+}
+.h3-hp-2{
+  position: relative;
+  top: -100px;
+  margin-right: 299px;
+  text-align: right;
+  font-size: 52px;
+  color:rgb(244, 244, 252);
+  border-color: black;
+  text-shadow: 3px 3px 3px #ababab;
+}
+.h3-hp-3{
+  position: relative;
+  top: -200px;
+  margin-right: 110px;
+  text-align: right;
+  font-size: 62px;
+  color:rgb(255, 255, 255);
+  text-shadow: 5px 5px 5px #020202;
+}
+
+ 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 .p_HP{
