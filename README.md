@@ -1,7 +1,6 @@
 # Amostra do site
 
-<img href="Baner-optimization.gif" width="567px" height="320">
-
+![](https://i.giphy.com/media/LEjDWeFaCSKvQzYcxO/giphy.webp)
 # Texto
 
 
