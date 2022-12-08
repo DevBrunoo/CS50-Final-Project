@@ -1,4 +1,9 @@
+# Amostra do site
+
+<img href="Baner-optimization.gif" width="567px" height="320">
+
 # Texto
+
 
 Utilizamos Python para importa o flamework Flask assim junto com suas bibliotecas 
 que sao uteis tanto para o desenvovimento do aplicativo como tambem para interacao 
@@ -119,9 +124,21 @@ flask run
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
+1. What will your software do?
+      - My web application shows the time for the client, as well as stores information of the agenda type and shows several motivational phrases every three hours by the “motivation” file
 
+1. What will your software do?
+      - My web application shows the time for the client, as well as stores information of the agenda type and shows several motivational phrases every three hours by the “motivation” file
+1. What will your software do?
+      - My web application shows the time for the client, as well as stores information of the agenda type and shows several motivational phrases every three hours by the “motivation” file
+1. What will your software do?
+      - My web application shows the time for the client, as well as stores information of the agenda type and shows several motivational phrases every three hours by the “motivation” file
+1. What will your software do?
+      - My web application shows the time for the client, as well as stores information of the agenda type and shows several motivational phrases every three hours by the “motivation” file
+1. What will your software do?
+      - My web application shows the time for the client, as well as stores information of the agenda type and shows several motivational phrases every three hours through the “motivation”1 file. What will your software do?
 
-------------------------------------------------------------------------------------------------------------------------
+     ------------------------------------------------------------------------------------------------------------------------
 #### Programming and Markup Langugaes:
 
 <a><img class="icons_curve" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white"/></a>
