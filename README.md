@@ -7,110 +7,99 @@ TODO
 ![](https://i.giphy.com/media/LEjDWeFaCSKvQzYcxO/giphy.webp)
 # Texto
 
+# About the project
 
-Utilizamos Python para importa o flamework Flask assim junto com suas bibliotecas 
-que sao uteis tanto para o desenvovimento do aplicativo como tambem para interacao 
-com o banco de dados SQL que serve para armazenar e gerenciar as informacoes de nosso
-aplicativo. 
+This is a web application that is based on helping you organize and value every minute of your time, we all know how precious our time can be and we should value every second of it, but there are few tools that help us with this task.
 
-Criei duas tabelas em um banco de dados uma com o nome schedule para armazenar os dados da agenda
-e uma com o nome de contact que ira armazena os textos digitados na pagina de contatos. 
+The project's function is to serve as an agenda and show several motivational phrases to the user during the day, the data filled in the forms are stored in an SQL database. The website design was built using the bootstrap framework.
 
-Render_template significa ao invés de carregar um texto quero que voce carregue um template. 
+# Acknowledgment
 
-Sempre que for usar uma variável dentro do seu código html coloque dentro de duas chaves {{ nome }} 
+I would first like to thank the CS50 team for showing me this wonderful world of programming and for teaching me many things that I will take with me throughout my life. Without you, this like other projects I built in my life would not exist
 
-Vamos colocar o site no servidor do Heroku pois ele e gratis, primeira coisa e garantir que app esteja dentro de if exemplo: 
+We use Python to import Flask flamework like this along with its libraries
+that are useful both for application development and also for interaction
+with the SQL database that serves to store and manage the information of our
+application.
 
 ```python
 
-If __name__ == “__main__”:
-     App.run(debug=True)
-
-#Tem que instalar a biblioteca do cs50 via terminal pelo: 
+# You have to install the cs50 library via terminal by:
 
 $ pip3 install cs50
 
 
 ```
-
-Para ver como seu banco de dado fica quando esta configurando ele use a ferramenta: https://www.khanacademy.org/computer-programming/sql-create-table-with-multiple-data-types/5945065256124416
-
-
-
 ## Answered questions
 
-1. O que seu software fará? 
-    - Meu web aplicativo mostra as horas para o cliente, como também armazena informações do tipo agenda e mostra diversas frases motivacionais a cada tres horas pelo arquivo “motivation”
+1. What will your software do?
+     - My web application shows the time for the client, as well as stores information like the agenda and shows several motivational phrases every three hours through the “motivation” file
 
 
-2. Que características terá?
-    - Tera um design padrão web criado com bootstrap
+2. What features will it have?
+     - It will have a standard web design created with bootstrap, it will be minimalist and clear
 
 
-3. Como sera executado?
-    - Sera executado via python utilizando um framework chamado de flask 
+3. How will it be executed?
+     - Will be executed via python using a framework called flask
 
 
-4. Que novas habilidades voce precisara adquirir?
-    - Foi preciso adquirir mais conhecimentos em JavaScrip para utilizar funções da maneira correspondida ao projeto, também foi necessário aprender mais sobre estrutura e design de banco de dados SQL. 
+4. What new skills will you need to acquire?
+     - It was necessary to acquire more knowledge in JavaScrip to use functions in the manner corresponding to the project, it was also necessary to learn more about structure and design of SQL database.
 
-5. Quais tópicos voce precisara pesquisar?
-    - Foi preciso pesquisar mias sobre SQLite, JavaScript e CSS
-
-
-
-6. Se estiver trabalhando, com dois colegas quem para o que? 
-    - Não estou trabalhando em dupla infelizmente 
-
-
-7. O que voce pode considerar um bom resultado para o seu projeto?
-    - Que ele rode de maneira fácil, que seja intuitivo e otimizavel para muitos tipos de telas e plataforma. 
-
-8. Um resultado melhor? 
-    - Que seja rápido e fácil de utilizar 
-8. O melhor resultado? 
-    -  Que realmente as pessoas comecem a utilizar dele para um melhor vida, que ele consiga ajudar um grande numero de pessoas. 
+5. What topics will you need to research?
+     - I had to research more about SQLite, JavaScript and CSS
 
 
 
+6. If working with two colleagues who for what?
+     - I'm not working in pairs unfortunately
+
+
+7. What can you consider a good result for your project?
+     - That it runs easily, that it is intuitive and that it can be optimized for many types of screens and platforms.
+
+8. A better result?
+     - Run without crashing on any server and be easy to use
+     
+8. The best result?
+     - That people really start using it for a better life, that it can help a large number of people.
 
 
 ```bash
 pip install foobar
 ```
 
-## Para rodar 
+## To rotate
 
-Para rodar o aplicativo execute os seguintes comandos de linha
+To run the application run the following line commands
 
 
 ```python
 
-# Caso não tenha Flask instalado ou esteja usando esse app pela primeira vez
-
+# If you don't have Flask installed or are using this app for the first time
 cd myproject
 
-# Ira installar algumas dependencias do peojeto
+# Will install some project dependencies
 
 python3 -m venv venv 
 
-# Para ativar o ambiente correspodente
+# To activate the corresponding environment
 
 . venv/bin/activate 
 
-# Ira installar biblioteca do flask
+# Will install flask library
 
 pip install Flask
 
-# Ira fazer o seu app web rodar.
-# Execute esse comando somente se estiver dentro da pagina myproject
+# Will make your web app run. 
+# Run this command only if inside the myproject page
 
 flask run
 
 ```
 
-Caso ja tenha Flask instalado ou ja tenha acessado esse peojeto
+If you already have Flask installed or have already accessed this project
 
 ```python
 
@@ -121,27 +110,33 @@ cd my project
 flask run
 ```
 
+# Database
+
+Run the following commands to view the data in the database
+
+```bash
+
+# Make sure you have SQL installed on your machine 
+# If you don't have it installed on your machine 
+# First enter the folder
+
+cd myproject
+
+sqlite3 schedule.db 
+
+# To view calendar data:
+
+SELECT * FROM schedule; 
+
+# To view contact page data;
+
+SELECT * FROM contact;
+
+```
 
 
-## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
-
-1. What will your software do?
-      - My web application shows the time for the client, as well as stores information of the agenda type and shows several motivational phrases every three hours by the “motivation” file
-
-1. What will your software do?
-      - My web application shows the time for the client, as well as stores information of the agenda type and shows several motivational phrases every three hours by the “motivation” file
-1. What will your software do?
-      - My web application shows the time for the client, as well as stores information of the agenda type and shows several motivational phrases every three hours by the “motivation” file
-1. What will your software do?
-      - My web application shows the time for the client, as well as stores information of the agenda type and shows several motivational phrases every three hours by the “motivation” file
-1. What will your software do?
-      - My web application shows the time for the client, as well as stores information of the agenda type and shows several motivational phrases every three hours by the “motivation” file
-1. What will your software do?
-      - My web application shows the time for the client, as well as stores information of the agenda type and shows several motivational phrases every three hours through the “motivation”1 file. What will your software do?
-
-     ------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 #### Programming and Markup Langugaes:
 
 <a><img class="icons_curve" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white"/></a>
