@@ -1,17 +1,14 @@
-# YOUR PROJECT TITLE
+# CS50 final project
+
 #### Video Demo:  <https://www.youtube.com/watch?v=M4OplO0rFP0&t=181s>
-#### Description:
-TODO
-# Amostra do site
-
-![](https://i.giphy.com/media/LEjDWeFaCSKvQzYcxO/giphy.webp)
-# Texto
-
-# About the project
-
+#### Description: Final project cs50, about time management
 This is a web application that is based on helping you organize and value every minute of your time, we all know how precious our time can be and we should value every second of it, but there are few tools that help us with this task.
 
 The project's function is to serve as an agenda and show several motivational phrases to the user during the day, the data filled in the forms are stored in an SQL database. The website design was built using the bootstrap framework.
+
+# Amostra do site
+
+![](https://i.giphy.com/media/LEjDWeFaCSKvQzYcxO/giphy.webp)
 
 # Acknowledgment
 
