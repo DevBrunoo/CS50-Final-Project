@@ -1,5 +1,4 @@
 import os
-import datetime #Biblioteca de tempo
 
 from cs50 import SQL
 from flask import Flask, render_template, flash, jsonify, redirect, render_template, request, session
@@ -48,12 +47,8 @@ def home():
 def link():
     return render_template("motivation.html")
 
-@app.route('/usuarios/<nome_usuario>')
-def usuarios(nome_usuario):
-    return render_template('usuarios.html', nome_usuario=nome_usuario)
 
 
-
-# coloca o site no ar
+# put the site live
 if __name__ == "__main__":
     app.run(debug=True)

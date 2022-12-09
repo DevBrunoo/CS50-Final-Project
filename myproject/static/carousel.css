@@ -4,7 +4,7 @@
 }
 
 /* 
-Editando texto dentro do carrousel
+Edit text inside the carousel
 -------------------------------------
  */
 .carousel-content {
@@ -101,10 +101,7 @@ Editando texto dentro do carrousel
   height: 32rem;
 }
 
-/* 
-Terceira parte do carosel
-----------------------------
-*/
+
 .featurette-heading, .lead{
   margin-left: 8%;
 }
