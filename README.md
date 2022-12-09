@@ -10,6 +10,18 @@ The project's function is to serve as an agenda and show several motivational ph
 
 ![](https://i.giphy.com/media/LEjDWeFaCSKvQzYcxO/giphy.webp)
 
+# CSS Board
+
+Cascading Style Sheets is a mechanism for adding style to a web document. CSS code can be applied directly to tags or contained within <style> tags.
+
+It is used in the files to make the project more beautiful, an example is that we do not use style.css to change the style of the page /motivation
+
+# JS Board
+
+JavaScript is a structured, high-level scripting, dynamically typed, multiparadigm, interpreted programming language. Along with HTML and CSS, JavaScript is one of the three main technologies on the World Wide Web.
+
+We use JavaScript in the motivation.html file to create functionality to bring an image along with a message every 3 hours. In other words, we use javascript in this project to implement more functionalities, you can see the JavaScript in the 'app.js' file;
+
 # Acknowledgment
 
 I would first like to thank the CS50 team for showing me this wonderful world of programming and for teaching me many things that I will take with me throughout my life. Without you, this like other projects I built in my life would not exist
