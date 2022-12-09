@@ -97,7 +97,7 @@ To run the application run the following line commands
 ```python
 
 # If you don't have Flask installed or are using this app for the first time
-cd myproject
+cd project
 
 # Will install some project dependencies
 
@@ -122,7 +122,7 @@ If you already have Flask installed or have already accessed this project
 
 ```python
 
-cd my project
+cd project
 
 . venv/bin/activate
 
