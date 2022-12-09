@@ -42,6 +42,7 @@ We use Python to import Flask flamework like this along with its libraries
 that are useful both for application development and also for interaction
 with the SQL database that serves to store and manage the information of our
 application.
+     https://cs50.harvard.edu/x/2022/
 
 ```python
 
