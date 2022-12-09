@@ -22,6 +22,18 @@ JavaScript is a structured, high-level scripting, dynamically typed, multiparadi
 
 We use JavaScript in the motivation.html file to create functionality to bring an image along with a message every 3 hours. In other words, we use javascript in this project to implement more functionalities, you can see the JavaScript in the 'app.js' file;
 
+# Python directory
+
+Python is a very popular language in areas of technology related to data analysis, research, algorithm development and AI.
+
+We use Python in this project, to use the Flask framework together with the SQL database. We run the application through Python functions and manage all user information through SQL.
+
+# SQLite
+
+SQLite is a type of relational database, that is, one that creates files based on the relationship between different elements, usually taking the form of a table. However, unlike other models, it does not depend on a server to store its information.
+
+We use it to manage user information, both to delete, add and edit.
+     
 # Acknowledgment
 
 I would first like to thank the CS50 team for showing me this wonderful world of programming and for teaching me many things that I will take with me throughout my life. Without you, this like other projects I built in my life would not exist
@@ -75,9 +87,6 @@ $ pip3 install cs50
      - That people really start using it for a better life, that it can help a large number of people.
 
 
-```bash
-pip install foobar
-```
 
 ## To rotate
 
