@@ -154,7 +154,6 @@ SELECT * FROM contact;
 ```
 
 
-
 ------------------------------------------------------------------------------------------------------------------------
 #### Programming and Markup Langugaes:
 
@@ -171,3 +170,9 @@ SELECT * FROM contact;
 
 <a><img class="icons_curve" src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=Flask&logoColor=white"/></a>
 <a><img class="icons_curve" src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=Bootstrap&logoColor=white"/></a>
+
+
+------------------------------------------------------------------------------------------------------------------------
+#### CS50 Certificate:
+<img src="https://i.ibb.co/1zCkWhj/CS50x.png" alt="CS50x" border="0">
+
