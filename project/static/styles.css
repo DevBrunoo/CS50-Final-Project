@@ -58,7 +58,7 @@ button, input[type="submit"] {
     vertical-align: middle;
     border-color: black;
     border-radius: 5px;
-}
+} 
 
 input[type="text"], input[type="datetime"] {
     line-height: 1.8;
@@ -99,3 +99,5 @@ input, button {
 .ll{
     color:#0026ff
 }
+
+/* ok */
